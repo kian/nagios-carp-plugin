@@ -108,7 +108,7 @@ main(int argc, char *argv[])
 		return (STATE_UNKNOWN);
 	}
 
-        if (carpr.carpr_state > CARP_MAXSTATE) {
+	if (carpr.carpr_state > CARP_MAXSTATE) {
 		(void)printf("CARP UNKNOWN - state: ???\n");
 		return (STATE_UNKNOWN);
 	}
