@@ -1,0 +1,32 @@
+============
+DESCRIPTION
+============
+
+check_carp (v0.1) by Kian Mohageri <kian.mohageri@gmail.com>
+
+This plugin is intended for use with Nagios (http://nagios.org).
+
+This plugin checks the state of a carp(4) interface.  If you don't
+specify an expected state, the plugin just prints out the current 
+state and returns OK.  If you specify an expected state, and the
+current state is different, the plugin returns CRITICAL.
+
+If there is a problem fetching the state information, the plugin
+returns UNKNOWN.
+
+============
+INSTALLATION
+============
+
+To install this plugin, do the following:
+
+	# make
+	# make install 
+
+You can manually specify the location to install the plugin:
+
+	# make install DESTDIR=/usr/local/nagios/plugins/ 
+
+You can remove it as follows:
+
+	# make uninstall DESTDIR=/usr/local/nagios/plugins/
